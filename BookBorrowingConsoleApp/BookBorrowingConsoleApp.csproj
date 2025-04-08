@@ -47,6 +47,7 @@
     <Compile Include="controller\BaseController.cs" />
     <Compile Include="dal\BookDAL.cs" />
     <Compile Include="dal\BaseDAL.cs" />
+    <Compile Include="enums\ActionEnum.cs" />
     <Compile Include="dal\UserDAL.cs" />
     <Compile Include="LocalJSONDB.cs" />
     <Compile Include="model\Book.cs" />

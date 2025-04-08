@@ -18,15 +18,21 @@ namespace BookBorrowingConsoleApp
     {
         static void Main(string[] args)
         {
-            Application app = new Application();
-            string command = null;
+            Base der = (Base) new Derived();
+            Base der2 = new Derived();
+            der.Print();
+            der2.Print();
+            Derived der3 = new Derived();
+            der3.Print();
+            //Application app = new Application();
+            //string command = null;
 
-            do
-            {
-                command = app.Process(command);
-            } while (!"exit".Equals(command));
+            //do
+            //{
+            //    command = app.Process(command);
+            //} while (!"exit".Equals(command));
 
-            Console.WriteLine("Exiting application...");
+            //Console.WriteLine("Exiting application...");
         }
     }
 }

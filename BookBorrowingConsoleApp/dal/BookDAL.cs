@@ -30,9 +30,11 @@ namespace BookBorrowingConsoleApp.dal
                 new Book(
                     Guid.NewGuid(), "System", DateTime.Now, "System", DateTime.Now,
                     "Moby-Dick", "Herman Melville"
-                )
+                ),
+                new Book { Title = "Example Book", Author = "Adrian Rolloque"}
             };
 
+        
         public override Book GetOne(string id)
         {
             var result = Guid.TryParse(id, out Guid guid);
@@ -49,7 +51,12 @@ namespace BookBorrowingConsoleApp.dal
         }
         public override Book GetOne(Guid id)
         {
-            return this.BookList.Find(user => user.Id == id);
+            //return this.BookList.Find(user => user.Id == id);
+            return this.BookList
+                    .Where(book => book.Id.Equals(id))
+                    .OrderBy(book => book.CreatedAt)
+                    .FirstOrDefault();
+
         }
         public override List<Book> GetAll()
         {

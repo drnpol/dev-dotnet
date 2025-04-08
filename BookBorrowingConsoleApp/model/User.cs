@@ -15,6 +15,7 @@ namespace BookBorrowingConsoleApp.model
         public string Password { get; set; }
         public string Role { get; set; }
 
+
        public User(): base(createdBy: null)
        {
         // empty user here... 
