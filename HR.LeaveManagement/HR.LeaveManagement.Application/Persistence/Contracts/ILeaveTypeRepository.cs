@@ -5,7 +5,7 @@ using HR.LeaveManagement.Domain;
 
 namespace HR.LeaveManagement.Application.Persistence.Contracts
 {
-    interface ILeaveTypeRepository : IGenericRepository<LeaveType>
+    public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
     {
     }
 }

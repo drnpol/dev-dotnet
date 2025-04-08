@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HR.LeaveManagement.Application
 {
     static class ApplicationServicesRegistration
     {
-        public static void ConfigureApplicationServices(this IServiceCollection services)
+        public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
         {
             /**
              * CHAT GPT:
@@ -18,6 +19,9 @@ namespace HR.LeaveManagement.Application
              *   ✅ And yes — your Destroy() example is 💯 valid.
              */
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            return services;
         }
     }
 }

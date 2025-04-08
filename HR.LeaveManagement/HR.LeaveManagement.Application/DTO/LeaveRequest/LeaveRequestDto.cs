@@ -5,7 +5,7 @@ using HR.LeaveManagement.Application.DTO.Common;
 
 namespace HR.LeaveManagement.Application.DTO.LeaveRequest
 {
-    class LeaveRequestListDto : BaseDto
+    public class LeaveRequestListDto : BaseDto
     {
         public LeaveTypeDto LeaveType { get; set; }
         public int LeaveTypeId { get; set; }
