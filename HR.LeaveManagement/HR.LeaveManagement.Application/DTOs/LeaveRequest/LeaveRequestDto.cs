@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HR.LeaveManagement.Application.DTO.Common;
-using HR.LeaveManagement.Application.DTO.LeaveType;
+using HR.LeaveManagement.Application.DTOs.Common;
+using HR.LeaveManagement.Application.DTOs.LeaveType;
 
 namespace HR.LeaveManagement.Application.DTO
 {

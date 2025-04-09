@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HR.LeaveManagement.Application.DTO.Common;
+using HR.LeaveManagement.Application.DTOs.Common;
 
-namespace HR.LeaveManagement.Application.DTO.LeaveType
+namespace HR.LeaveManagement.Application.DTOs.LeaveType
 {
     public class LeaveTypeDto : BaseDto
     {

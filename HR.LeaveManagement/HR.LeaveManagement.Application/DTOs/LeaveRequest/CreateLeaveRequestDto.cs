@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HR.LeaveManagement.Application.DTO.Common;
+using HR.LeaveManagement.Application.DTOs.Common;
 
-namespace HR.LeaveManagement.Application.DTO
+namespace HR.LeaveManagement.Applications.DTO
 {
-    public class CreateLeaveRequestDto : BaseDto
+    public class CreateLeaveRequestDto
     {
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

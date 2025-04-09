@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HR.LeaveManagement.Application.DTO.LeaveAllocation;
+using HR.LeaveManagement.Application.DTOs.LeaveAllocation;
 using MediatR;
 
 namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Requests.Queries
