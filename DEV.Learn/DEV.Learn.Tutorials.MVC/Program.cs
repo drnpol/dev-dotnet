@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using DEV.Learn.Tutorials.MVC.Data;
 namespace DEV.Learn.Tutorials.MVC
 {
     public class Program
@@ -5,6 +8,8 @@ namespace DEV.Learn.Tutorials.MVC
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<DEVLearnTutorialsMVCContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DEVLearnTutorialsMVCContext") ?? throw new InvalidOperationException("Connection string 'DEVLearnTutorialsMVCContext' not found.")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
